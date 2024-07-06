@@ -115,10 +115,17 @@ body {
   margin: 6px 0 25px;
 }
 
+/* .sidebar .side-profile .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
 .sidebar .side-profile .skills .skill-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  /* margin-left: 10px; */
   margin-top: 10px;
 }
 
@@ -143,4 +150,95 @@ body {
 
 .container {
   flex: 8;
+  padding: 20px 40px 20px 24px;
+}
+
+.container .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.container .nav .search,
+.container .nav .location {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container .nav .search input,
+.container .nav .location input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: transparent;
+  padding-left: 36px;
+}
+
+.container .nav .search i,
+.container .nav .location i {
+  position: absolute;
+  font-size: 1.5rem;
+  padding: 6px;
+  color: #666869;
+}
+
+.container .nav > button {
+  background: var(--main-dark);
+  color: var(--main-light);
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.container .nav > button#menuToggle {
+  display: flex;
+  padding: 6px;
+  font-size: 1.375px;
+  display: none;
+}
+
+.container .nav .user-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container .nav .user-container > i {
+  font-size: 20px;
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container .nav .user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container .nav .user-info img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.container .nav .user-info a {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.container .nav .user-info a i {
+  font-size: 1.2rem;
+}
+
+.container .nav .user-info p {
+  font-size: 13px;
 }
