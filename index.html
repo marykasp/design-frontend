@@ -7,21 +7,63 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
     <title>Job Platform | Design</title>
   </head>
   <body>
     <div class="sidebar">
-      <a href="#">Job Works</a>
+      <a href="#">JobWorks</a>
 
       <div class="side-nav">
-        <div class="item"></div>
+        <div class="item active">
+          <i class="bx bx-search-alt"></i>
+          <a href="#">Home</a>
+        </div>
+        <div class="item">
+          <i class="bx bx-notification"></i>
+          <a href="#">Notifications</a>
+        </div>
+        <div class="item">
+          <i class="bx bx-briefcase"></i>
+          <a href="#">My Jobs</a>
+        </div>
+        <div class="item">
+          <i class="bx bx-bookmark-minus"></i>
+          <a href="#">Saved Jobs</a>
+        </div>
+        <div class="item">
+          <i class="bx bx-cog"></i>
+          <a href="#">Settings</a>
+        </div>
+      </div>
+
+      <!-- User Profile -->
+      <div class="side-profile">
+        <div class="info">
+          <img src="assets/male-profile-1.png" alt="profile image" />
+          <a href=""></a>
+          <p>Graphic Designer</p>
+        </div>
+        <!-- Profile Skills -->
+        <div class="skills">
+          <h5>Skills and Expertise</h5>
+          <div class="skill-tags">
+            <div class="item">
+              <p>Graphic Designer</p>
+            </div>
+            <div class="item">
+              <p>Illustrator</p>
+            </div>
+            <div class="item">
+              <p>Photoshop</p>
+            </div>
+            <div class="item">
+              <p>HTML/CSS</p>
+            </div>
+          </div>
+        </div>
+        <!-- View Profile -->
+        <button>View Profile</button>
       </div>
     </div>
   </body>
