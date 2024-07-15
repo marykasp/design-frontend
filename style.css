@@ -148,11 +148,13 @@ body {
   cursor: pointer;
 }
 
+/* MAIN CONTAINER */
 .container {
   flex: 8;
   padding: 20px 40px 20px 24px;
 }
 
+/****** TOPBAR NAVIGATION *******/
 .container .nav {
   display: flex;
   align-items: center;
@@ -242,3 +244,5 @@ body {
 .container .nav .user-info p {
   font-size: 13px;
 }
+
+/****** JOB LIST *******/
