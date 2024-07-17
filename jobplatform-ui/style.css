@@ -371,6 +371,87 @@ body {
   height: calc(20px * 3);
 }
 
+/****** JOB FILTERS *******/
+
 .container .main .filters {
   flex: 2;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container .main .filters .header {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .main .filters .header a,
+.container .main .filters .item .title a {
+  font-size: 13px;
+  color: #ca3844;
+  font-weight: bold;
+}
+
+.container .main .filters .item .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.container .main .filters .item .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.container .main .filters .item .checkbox div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.container .main .filters .item .checkbox input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: #111;
+  cursor: pointer;
+}
+
+.container .main .filters .item .checkbox label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #a4a8ac;
+}
+
+.container .main .filters .item .checkbox p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.container .main .filters .item .location {
+  background: #f2f2f2;
+  margin: 14px 0;
+  padding: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.container .main .filters .item .location input[type="text"] {
+  width: 100%;
+  padding-left: 24px;
+  background: transparent;
+  border: none;
+}
+
+.container .main .filters .item .location i {
+  position: absolute;
+  font-size: 18px;
+  color: #a4a8ac;
 }
