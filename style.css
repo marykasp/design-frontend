@@ -245,4 +245,132 @@ body {
   font-size: 13px;
 }
 
-/****** JOB LIST *******/
+/****** JOB LIST CARDS *******/
+
+.container .main {
+  display: flex;
+}
+
+.container .main .content {
+  flex: 9;
+}
+
+.container .main .content .header {
+  margin-top: 20px;
+}
+
+.container .main .content .header h4 span {
+  font-size: 13px;
+  color: #a4a8ac;
+  font-weight: 500;
+}
+
+.container .main .content .header p {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.container .main .content .job-cards {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.container .main .content .job-cards .card {
+  padding: 12px;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.container .main .content .job-cards .card:hover {
+  box-shadow: none;
+}
+
+.container .main .content .job-cards .card .card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .main .content .job-cards .card .card-header > i {
+  font-size: 24px;
+  color: #a4a8ac;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.container .main .content .job-cards .card .card-header > i:hover {
+  color: #111;
+}
+
+.container .main .content .job-cards .card .card-header .job-info {
+  display: flex;
+  gap: 10px;
+}
+
+.container .main .content .job-cards .card .card-header .job-info i {
+  font-size: 34px;
+  background: #f2f2f2;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.container .main .content .job-cards .card .card-header .job-info h5 {
+  font-weight: 500;
+}
+
+.container .main .content .job-cards .card .card-header .job-info h5 span {
+  font-size: 12px;
+  color: #a4a8ac;
+}
+
+.container .main .content .job-cards .card .card-header .job-info a {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.container .main .content .job-cards .card .card-header .job-info p {
+  font-size: 12px;
+}
+
+.container .main .content .job-cards .card .card-tags {
+  margin: 12px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.container .main .content .job-cards .card .card-tags a {
+  font-size: 13px;
+  background-color: #f2f2f2;
+  padding: 5px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.container .main .content .job-cards .card .card-tags a:hover {
+  background-color: var(--main-dark);
+  color: var(--font-light);
+}
+
+.container .main .content .job-cards .card .card-desc {
+  font-size: 14px;
+  color: #a4a8ac;
+  line-height: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  height: calc(20px * 3);
+}
+
+.container .main .filters {
+  flex: 2;
+}
