@@ -200,7 +200,7 @@ body {
 .container .nav > button#menuToggle {
   display: flex;
   padding: 6px;
-  font-size: 1.375px;
+  /* font-size: 1.375px; */
   display: none;
 }
 
@@ -454,4 +454,34 @@ body {
   position: absolute;
   font-size: 18px;
   color: #a4a8ac;
+}
+
+/****** RESPONSIVE DESIGN *******/
+
+@media screen and (max-width: 1430px) {
+  .sidebar .side-profile .skills h5,
+  .sidebar .side-profile .skills .skill-tags {
+    display: none;
+  }
+
+  .sidebar .side-profile button {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 20px;
+  }
+
+  .sidebar {
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    left: -172px;
+  }
+
+  .container .nav > button#menuToggle {
+    display: flex;
+  }
 }

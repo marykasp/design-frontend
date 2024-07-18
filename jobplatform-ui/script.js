@@ -8,6 +8,7 @@ checkboxes.forEach((c) => {
     // get label of the checkbox in order to update its color if checkbox is checked
     const label = document.querySelector(`label[for=${c.name}]`);
 
+    // can use listArray to iterate over and filter cards that contain one of those names in data attribute
     if (c.checked) {
       // change label color
       label.style.color = "#1A1E20";
