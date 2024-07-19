@@ -148,6 +148,7 @@ body {
   cursor: pointer;
 }
 
+/****** MAIN CONTAINER *******/
 /* MAIN CONTAINER */
 .container {
   flex: 8;

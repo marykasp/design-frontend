@@ -20,3 +20,21 @@ checkboxes.forEach((c) => {
     }
   });
 });
+
+// Toggle Sidebar
+const sidebar = document.querySelector(".sidebar");
+const menuBtn = document.getElementById("menuToggle");
+
+menuBtn.addEventListener("click", () => {
+  sidebar.style.left = "0px";
+});
+
+// determine where click on document occurs - if user clicks not on sidebar or menu, close sidebar
+document.addEventListener("click", (e) => {
+  const isClickInside =
+    sidebar.contains(e.target) || menuBtn.contains(e.target);
+
+  if (!isClickInside) {
+    sidebar.style.left = "-172px";
+  }
+});
