@@ -20,7 +20,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #c5cae9;
+  background: #1abaff;
   border-radius: 160px;
 }
 
@@ -196,6 +196,7 @@ body {
 .container .tabs-container .tabs #active-tab {
   position: absolute;
   width: 100%;
+  width: 112px;
   height: 100%;
   background: #c6e7f6;
   z-index: 1;
@@ -203,6 +204,7 @@ body {
   transition: all 0.5s ease;
 }
 
+/**** TAB CONTENT ****/
 .container .tab-content {
   display: none;
 }
@@ -215,6 +217,44 @@ body {
   padding: 0 4px;
   font-size: 15px;
   margin-bottom: 16px;
+}
+
+.container .tab-content .facts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1px;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.container .tab-content .facts a {
+  display: flex;
+  background: #fafafa;
+  gap: 8px;
+  border-radius: 5px;
+  color: #757575;
+  padding: 8px;
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.container .tab-content .contact-me {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1px;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.container .tab-content .contact-me a {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  color: #1abaff;
+  padding: 8px;
+  border: 1px solid #eee;
 }
 
 .container button {
