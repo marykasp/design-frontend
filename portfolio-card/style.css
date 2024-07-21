@@ -224,6 +224,18 @@ body {
   margin-bottom: 16px;
 }
 
+.container .tabs-container .tabs li:nth-child(1):has(.active) ~ #active-tab {
+  transform: translateX(0);
+}
+
+.container .tabs-container .tabs li:nth-child(2):has(.active) ~ #active-tab {
+  transform: translateX(112px);
+}
+
+.container .tabs-container .tabs li:nth-child(3):has(.active) ~ #active-tab {
+  transform: translateX(224px);
+}
+
 .container .tab-content .facts {
   display: flex;
   flex-direction: column;
