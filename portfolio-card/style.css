@@ -206,7 +206,12 @@ body {
 
 /**** TAB CONTENT ****/
 .container .tab-content {
+  overflow-y: auto;
   display: none;
+}
+
+.container .tab-content h3 {
+  margin-top: 8px;
 }
 
 .container .active-tab-content {
@@ -255,6 +260,46 @@ body {
   color: #1abaff;
   padding: 8px;
   border: 1px solid #eee;
+}
+
+.container .tab-content .skills {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1px;
+  gap: 12px;
+}
+
+.container .tab-content .skills li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fafafa;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  font-weight: 600;
+}
+
+.container .tab-content .skills li i {
+  font-weight: 500;
+  color: #1abaff;
+  font-size: 20px;
+}
+
+.container .tab-content .skills li.javascript i {
+  color: #f0d91d;
+}
+
+.container .tab-content .skills li.html i {
+  color: #264de4;
+}
+
+.container .tab-content .skills li.react i {
+  color: #42b7d6;
+}
+
+.container .tab-content .skills li.git i {
+  color: #000;
 }
 
 .container button {
