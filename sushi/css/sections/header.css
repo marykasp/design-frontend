@@ -31,7 +31,7 @@
 .header__menu,
 .header__menu-mobile {
   list-style: none;
-  flex: 1.245;
+  flex: 1.238;
   display: flex;
   justify-content: flex-end;
   align-items: center;
