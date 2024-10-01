@@ -50,7 +50,8 @@ header {
 
 .bg-slide,
 .bg-slide .circle,
-.bg-slide .circle img {
+.bg-slide .circle img,
+.circle-darktransp {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -62,15 +63,21 @@ header {
   overflow: hidden;
 }
 
-.bg-slide .circle.large {
+.bg-slide .circle.large,
+.circle-darktransp {
   clip-path: circle(50% at 50% 50%);
 }
 
 .bg-slide .circle.small {
   clip-path: circle(30% at 50% 50%);
+  z-index: 12;
 }
 
 .bg-slide .circle img {
   object-fit: cover;
   transform: rotate(0deg) scale(1.2);
+}
+
+.circle-darktransp {
+  background: rgb(0 0 0 / 0.2);
 }
