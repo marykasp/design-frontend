@@ -7,15 +7,12 @@ let index = 0;
 rotateBtn.addEventListener("click", () => {
   slides.forEach((slide) => {
     if (slide.classList.contains("active")) {
+      // will replace with after-active
       slide.classList.add("after-active");
     } else {
       slide.classList.remove("after-active");
     }
   });
-  // slides.forEach((slide) => {
-  //   // remove the active class
-  //   slide.classList.remove("active");
-  // });
 
   // remove the active class from
   slides[index].classList.remove("active");
