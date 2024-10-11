@@ -29,7 +29,7 @@
 
 /* content and image divs as children */
 .trending-sushi,
-.trending-drink {
+.trending-drinks {
   width: 100%;
   min-height: 640px;
   display: flex;
